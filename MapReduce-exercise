@@ -1,0 +1,18 @@
+SELECT payment, sales FROM minipurchases.txt
+GROUP BY payment;
+
+1. sys.stdout.write("{0}\t{1}\n".format(category, sales))
+SELECT category, sales FROM minipurchases.txt
+GROUP BY category;
+2. SELECT category, COUNT(item) FORM minipurchases.txt
+GROUP BY category;
+3. 
+4. sys.stdout.write("{0}\t{1}\n".format(category = ’Computers’ && ‘Cameras’ && ‘Video Games’, sales))
+SELECT category, sales FROM minipurchases.txt
+WHERE category = ’Computers’, ‘Cameras’, ‘Video Games’
+GROUP BY category;
+5. SELECT category, COUNT(item) FROM minipurchases.txt
+HAVING COUNT(item) > 114
+GROUP BY category;
+6. SELECT category, AVG(sales) FROM minipurchases.txt
+GROUP BY category;
